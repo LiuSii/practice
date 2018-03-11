@@ -1,2 +1,0 @@
-# hello
-ptint("hello,world")
