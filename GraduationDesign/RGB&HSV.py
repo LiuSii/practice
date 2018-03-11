@@ -7,7 +7,7 @@ def img_in(str_path):
     return image
 
 
-def img_out(win_name , image):
+def img_out(win_name, image):
     # 图片输出
     cv.imshow(win_name, image)
 
@@ -19,7 +19,7 @@ def split(image):
 
 
 # 输入输出原图
-img = img_in("./resources/test.jpg")
+img = img_in("../resources/test.jpg")
 img_out("original", img)
 
 # RGB输出
@@ -38,6 +38,6 @@ img_out("H", H)
 img_out("S", S)
 img_out("V", V)
 
-#等待
+# 等待
 cv.waitKey(0)
 cv.destroyAllWindows()
