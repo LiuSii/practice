@@ -19,7 +19,7 @@ def split(image):
 
 
 # 输入输出原图
-img = img_in("./resources/test.jpg")
+img = img_in("../resources/test.jpg")
 img_out("original", img)
 
 # RGB输出
