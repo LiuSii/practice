@@ -5,7 +5,7 @@ import cv2
 img = cv2.imread('../resources/map.jpg')
 Z = img.reshape((-1, 3))
 
-# 转换为float类型 
+# 转换为float类型
 Z = np.float32(Z)
 
 # 定义标准、K值
@@ -15,7 +15,7 @@ K = 2
 # 调用k_means函数
 ret, label, center = cv2.kmeans(Z, K, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
 
-# Now convert back into uint8, and make original image
+# Now convert back into uint8, and make original image 
 # 转回uint8格式，恢复图像
 center = np.uint8(center)
 res = center[label.flatten()]
