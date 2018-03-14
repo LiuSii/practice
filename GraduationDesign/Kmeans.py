@@ -5,7 +5,7 @@ import cv2
 img = cv2.imread('../resources/map.jpg')
 Z = img.reshape((-1, 3))
 
-# 转换为float类型
+# 转换为float类型 
 Z = np.float32(Z)
 
 # 定义标准、K值
